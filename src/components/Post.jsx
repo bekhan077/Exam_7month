@@ -1,9 +1,9 @@
 import React from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import one from "../../public/assets/01.png";
 import two from "../../public/assets/02.png";
 import three from "../../public/assets/03.png";
 import four from "../../public/assets/04.png";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Post = () => {
   return (
