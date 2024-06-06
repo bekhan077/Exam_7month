@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import Groupimg from "../../public/assets/Group40.png";
-import "../css/deleteButton.css";
-import { ProductContext, ShopContext } from "../../src/App";
+import { ProductContext, ShopContext } from "../App";
 import { NavLink } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
@@ -9,10 +8,10 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import ProductPage from "../components/ProductPage";
 import CardSlider from "../components/CardSlider";
-import { Data } from "../db/data";
+import { Data } from "../data/data";
 import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 
-const Shop = () => {
+const Shopping = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -25,7 +24,7 @@ const Shop = () => {
 
   const [counts, setCounts] = useState({});
   const { product, setProduct } = useContext(ProductContext);
-  const { shop, setShop } = useContext(ShopContext);
+  const { shop } = useContext(ShopContext);
 
   const increment = (itemId) => {
     setCounts((prevCounts) => ({
@@ -46,11 +45,6 @@ const Shop = () => {
   const handleClick = () => {
     setIsLiked(!isLiked);
   };
-
-  const [facebookHovered, setFacebookHovered] = useState(false);
-  const [twitterHovered, setTwitterHovered] = useState(false);
-  const [linkedinHovered, setLinkedinHovered] = useState(false);
-  const [youtubeHovered, setYoutubeHovered] = useState(false);
 
   const facebookClick = () => {
     window.open("https://www.facebook.com", "_blank");
@@ -135,7 +129,7 @@ const Shop = () => {
                       alt="main image"
                       className="w-[404px] h-[404px]"
                     />
-                    <FiSearch className="absolute top-[-20px] right-[-20px] text-[22px] hover:cursor-pointer hover:scale-110 hover:rotate-90 duration-300" />
+                    <FiSearch className="absolute top-[-20px] right-[-20px] text-[22px] hover:cursor-pointer hover:scale-110 duration-300" />
                   </div>
                 </div>
                 <div className="w-[574px] ">
@@ -256,7 +250,7 @@ const Shop = () => {
                     <NavLink to="/shop/basket">
                       <button
                         onClick={() => handleProductClick(item)}
-                        className="btn-style510 w-[130px] h-[40px] rounded-[6px] bg-[#46A358] text-white text-[14px] font-bold ml-[26px]"
+                        className="w-[130px] h-[40px] rounded-[6px] bg-[#46A358] text-white text-[14px] font-bold ml-[26px]"
                       >
                         Buy NOW
                       </button>
@@ -292,69 +286,17 @@ const Shop = () => {
                       Share this products:
                     </p>
                     <ul className="flex items-center gap-[10px]  h-[35px]">
-                      <li
-                        className={`w-[30px] border-none h-[30px] rounded-[4px] hover:border-[#1877F2] hover:cursor-pointer border flex items-center justify-center border-[#46A35833] 
-        ${facebookHovered ? "hovered" : ""}`}
-                        onMouseEnter={() => setFacebookHovered(true)}
-                        onMouseLeave={() => setFacebookHovered(false)}
-                        onClick={facebookClick}
-                      >
-                        <FaFacebookF
-                          className={`text-[15px] ${
-                            facebookHovered ? "icon-hovered" : ""
-                          }`}
-                          style={{
-                            color: facebookHovered ? "#1877F2" : "#3D3D3D",
-                          }}
-                        />
+                      <li>
+                        <FaFacebookF className="text-slate-800" />
                       </li>
-                      <li
-                        className={`w-[30px] border-none h-[30px] rounded-[4px] hover:border-[#1DA1F2] hover:cursor-pointer border flex items-center justify-center border-[#46A35833] 
-        ${twitterHovered ? "hovered" : ""}`}
-                        onMouseEnter={() => setTwitterHovered(true)}
-                        onMouseLeave={() => setTwitterHovered(false)}
-                        onClick={twitterClick}
-                      >
-                        <FaTwitter
-                          className={`text-[15px] ${
-                            twitterHovered ? "icon-hovered" : ""
-                          }`}
-                          style={{
-                            color: twitterHovered ? "#1DA1F2" : "#3D3D3D",
-                          }}
-                        />
+                      <li>
+                        <FaTwitter className="text-slate-800" />
                       </li>
-                      <li
-                        className={`w-[30px] h-[30px] border-none rounded-[4px] hover:border-[#0077b5] hover:cursor-pointer border flex items-center justify-center border-[#46A35833] 
-        ${linkedinHovered ? "hovered" : ""}`}
-                        onMouseEnter={() => setLinkedinHovered(true)}
-                        onMouseLeave={() => setLinkedinHovered(false)}
-                        onClick={linkedinClick}
-                      >
-                        <FaLinkedinIn
-                          className={`text-[15px] ${
-                            linkedinHovered ? "icon-hovered" : ""
-                          }`}
-                          style={{
-                            color: linkedinHovered ? "#0077b5" : "#3D3D3D",
-                          }}
-                        />
+                      <li>
+                        <FaLinkedinIn className="text-slate-800" />
                       </li>
-                      <li
-                        className={`w-[30px] h-[30px] border-none rounded-[4px] hover:border-[red] hover:cursor-pointer border flex items-center justify-center border-[#46A35833] 
-        ${youtubeHovered ? "hovered" : ""}`}
-                        onMouseEnter={() => setYoutubeHovered(true)}
-                        onMouseLeave={() => setYoutubeHovered(false)}
-                        onClick={youtubeClick}
-                      >
-                        <CiMail
-                          className={`text-[15px] ${
-                            youtubeHovered ? "icon-hovered" : ""
-                          }`}
-                          style={{
-                            color: youtubeHovered ? "yellow" : "#3D3D3D",
-                          }}
-                        />
+                      <li>
+                        <CiMail className="text-slate-800" />
                       </li>
                     </ul>
                   </div>
@@ -378,4 +320,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Shopping;

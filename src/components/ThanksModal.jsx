@@ -7,7 +7,7 @@ const ThanksModal = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 5000); // 5 soniya
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);

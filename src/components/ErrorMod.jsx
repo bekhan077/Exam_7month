@@ -1,7 +1,6 @@
-// src/components/Modal.js
 import React, { useEffect, useState } from "react";
 
-const ErrorModal = ({ message, onClose }) => {
+const ErrorMod = ({ message, onClose }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -9,7 +8,7 @@ const ErrorModal = ({ message, onClose }) => {
       setVisible(false);
       setTimeout(() => {
         onClose();
-      }, 2000); // Wait for the opacity transition to complete
+      }, 2000);
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -21,11 +20,13 @@ const ErrorModal = ({ message, onClose }) => {
         visible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className=" bg-red-500 p-4 opacity-80 mb-[500px] rounded-md">
-        <p className="text-center text-white text-[20px] font-bold ">{message}</p>
+      <div className=" bg-red-500 p-4 opacity-0 mb-[500px] rounded-md">
+        <p className="text-center text-white text-[20px] font-bold ">
+          {message}
+        </p>
       </div>
     </div>
   );
 };
 
-export default ErrorModal;
+export default ErrorMod;

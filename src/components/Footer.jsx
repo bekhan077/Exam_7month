@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import tkaktus from "../../public/assets/tall_kaktus.svg";
 import Tuvak from "../../public/assets/tuvak.svg";
-import leaf1 from "../../public/assets/green_leaf.svg";
 import heart from "../../public/assets/heart_tu.svg";
 import kaktus from "../../public/assets/kaktus.svg";
-import tkaktus from "../../public/assets/tall_kaktus.svg";
 import flower from "../../public/assets/flower_tu.svg";
 import Logo from "../../public/assets/Logo.svg";
-import mail from "../../public/assets/Message.svg";
+import leaf1 from "../../public/assets/green_leaf.svg";
 import tel from "../../public/assets/Calling.svg";
-import carts from "../../public/assets/carts.svg"
+import carts from "../../public/assets/carts.svg";
+import mail from "../../public/assets/Message.svg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import {
   FaFacebookF,
@@ -58,25 +58,25 @@ const Footer = () => {
   return (
     <>
       <div className="w-[1200px] m-auto bg-[#FBFBFB]">
-        <div className="w-full p-[24px] flex items-center justify-between">
+        <div className="w-full p-[24px] flex justify-between items-center ">
           <div className="flex items-center">
             <div className="w-[204px] ">
-              <div className="relative w-[74px] h-[74px] bg-[#46A35821] rounded-[50%] mt-[22px] mb-[15px]">
+              <div className="w-[74px] h-[74px] bg-[#46A35821] rounded-[50%] mt-[22px] mb-[15px] relative ">
                 <img
                   src={Tuvak}
                   alt="rasm"
-                  className="w-[55px] h-[48px] absolute right-0 bottom-[3px]"
+                  className="absolute right-0 bottom-[3px] w-[55px] h-[48px] "
                 />
                 <img
                   src={leaf1}
                   alt="rasm"
-                  className="w-[55px] h-[48px] absolute right-0 bottom-[47px]"
+                  className="absolute right-0 bottom-[47px] w-[55px] h-[48px] "
                 />
               </div>
-              <p className="text-[17px] text-[#3D3D3D] font-bold mb-[9px]">
+              <p className="text-[#3D3D3D] font-bold mb-[9px] text-[17px] ">
                 Garden Care
               </p>
-              <p className="text-[14px] text-[#727272] font-normal">
+              <p className="text-[#727272] font-normal text-[14px] ">
                 We are an online plant shop offering a wide range of cheap and
                 trendy plants.
               </p>
@@ -195,19 +195,19 @@ const Footer = () => {
               My Account
             </p>
             <ul>
-              <li className="text-[14px] font-normal hover:cursor-pointer hover:text-[#46A358] mb-[8px] text-[#3D3D3D]">
+              <li className="hover:text-[#46A358] mb-[8px] text-[14px] font-normal hover:cursor-pointer  text-[#3D3D3D]">
                 My Account
               </li>
-              <li className="text-[14px] font-normal hover:cursor-pointer hover:text-[#46A358] mb-[8px] text-[#3D3D3D]">
+              <li className="hover:text-[#46A358] mb-[8px] text-[14px] font-normal hover:cursor-pointer  text-[#3D3D3D]">
                 Our stores
               </li>
-              <li className="text-[14px] font-normal hover:cursor-pointer hover:text-[#46A358] mb-[8px] text-[#3D3D3D]">
+              <li className="hover:text-[#46A358] mb-[8px] text-[14px] font-normal hover:cursor-pointer  text-[#3D3D3D]">
                 Contact us
               </li>
-              <li className="text-[14px] font-normal hover:cursor-pointer hover:text-[#46A358] mb-[8px] text-[#3D3D3D]">
+              <li className="hover:text-[#46A358] mb-[8px] text-[14px] font-normal hover:cursor-pointer  text-[#3D3D3D]">
                 Career
               </li>
-              <li className="text-[14px] font-normal hover:cursor-pointer hover:text-[#46A358] mb-[8px] text-[#3D3D3D]">
+              <li className="hover:text-[#46A358] mb-[8px] text-[14px] font-normal hover:cursor-pointer  text-[#3D3D3D]">
                 Specials
               </li>
             </ul>

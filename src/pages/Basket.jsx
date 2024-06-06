@@ -1,14 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
-import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 import { AiOutlineDelete } from "react-icons/ai";
-import { ProductContext } from "../../src/App";
-import { Data } from "../../src/db/data";
-import "../css/deleteButton.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { ProductContext } from "../App";
+import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 import CardSlider from "../components/CardSlider";
-import ErrorMOdal from "../components/ErrorModal";
-import { Modal } from "@mui/material";
-import ErrorModal from "../components/ErrorModal";
+import { NavLink, useNavigate } from "react-router-dom";
+import ErrorMod from "../components/ErrorMod";
+import { Data } from "../data/data";
 
 const Basket = () => {
   useEffect(() => {
@@ -56,7 +53,7 @@ const Basket = () => {
 
   const handleCheckout = () => {
     if (product.length === 0) {
-      setShowModal(true); // Show the modal if the product array is empty
+      setShowModal(true);
       return;
     }
 
@@ -76,7 +73,7 @@ const Basket = () => {
   return (
     <>
       {showModal && (
-        <ErrorModal
+        <ErrorMod
           message="Please enter a product first!"
           onClose={() => setShowModal(false)}
         />
@@ -84,33 +81,33 @@ const Basket = () => {
       <div className="w-full mt-[110px]">
         <div className="flex items-center mb-[51px]">
           <NavLink to="/">
-            <p className="text-[15px] font-bold text-[#3D3D3D] hover:cursor-pointer">
+            <p className="text-[#3D3D3D] hover:cursor-pointertext-[15px] font-bold">
               Home
             </p>
           </NavLink>
-          <p className="text-[15px] font-normal text-[#3D3D3D] mx-[2px]">/</p>
+          <p className="text-[#3D3D3D] mx-[2px] text-[15px] font-normal">/</p>
           <NavLink className="basket" to="/shop">
-            <p className="text-[15px] font-normal text-[#3D3D3D] hover:cursor-pointer">
+            <p className="text-[#3D3D3D] hover:cursor-pointer text-[15px] font-normal">
               Shop
             </p>
           </NavLink>
-          <p className="text-[15px] font-normal text-[#3D3D3D] mx-[2px]">/</p>
+          <p className="text-[#3D3D3D] mx-[2px] text-[15px] font-normal">/</p>
           <NavLink className="basket" to="/shop/basket">
-            <p className="text-[15px] font-normal text-[#3D3D3D] hover:cursor-pointer">
+            <p className="text-[#3D3D3D] hover:cursor-pointer text-[15px] font-normal">
               Shopping Cart
             </p>
           </NavLink>
         </div>
         <div className="w-full flex items-start justify-between">
-          <div className="w-[782px] border-blue-400">
+          <div className="border-blue-500 w-[780px]">
             <div className="flex items-center">
-              <p className="mr-[265px] text-[#3D3D3D] text-[16px] font-medium">
+              <p className="text-[#3D3D3D] text-[16px] mr-[265px] font-medium">
                 Products
               </p>
-              <p className="mr-[108px] text-[#3D3D3D] text-[16px] font-medium">
+              <p className="text-[#3D3D3D] text-[16px] mr-[108px] font-medium">
                 Price
               </p>
-              <p className="mr-[97px] text-[#3D3D3D] text-[16px] font-medium">
+              <p className="text-[#3D3D3D] text-[16px] mr-[97px] font-medium">
                 Quantity
               </p>
               <p className="text-[#3D3D3D] text-[16px] font-medium">Total</p>
@@ -163,7 +160,7 @@ const Basket = () => {
 
                       <AiOutlineDelete
                         onClick={() => deleteItem(item.id)}
-                        className="hover:text-red-600 hover:scale-125 ml-[40px] text-[23px] text-[#727272] hover:cursor-pointer hover:rotateRight"
+                        className="hover:text-red-600 hover:scale-125 ml-[40px] text-[23px] text-[#727272] hover:cursor-pointer"
                       />
                     </div>
                   );
@@ -223,7 +220,7 @@ const Basket = () => {
             </div>
             <button
               onClick={handleCheckout}
-              className="btn-style509 w-full mb-[14px] h-[40px] text-white font-bold bg-[#46A358] rounded-[3px]"
+              className=" w-full mb-[14px] h-[40px] text-white font-bold bg-[#46A358] rounded-[3px]"
             >
               Proceed To Checkout
             </button>

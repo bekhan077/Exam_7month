@@ -1,9 +1,9 @@
 import React from "react";
-import { IoMdClose } from "react-icons/io";
 import thanks from "../../public/assets/thankyou.svg";
+import { IoMdClose } from "react-icons/io";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import "../css/deleteButton.css";
-const OrderModal = ({ isOpen, onClose }) => {
+
+const OrderMod = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const location = useLocation();
@@ -19,7 +19,7 @@ const OrderModal = ({ isOpen, onClose }) => {
   };
 
   const handleTrackOrder = () => {
-    navigate("/", { state: { showThanksModal: true } }); // navigate funksiyasini ishlatish
+    navigate("/", { state: { showThanksModal: true } });
   };
 
   if (!isOpen) return null;
@@ -28,10 +28,10 @@ const OrderModal = ({ isOpen, onClose }) => {
       <div className=" mt-[366px] mb-[100px]  bg-white opacity-110 w-[578px]">
         <div className="w-full relative flex flex-col items-center justify-center h-[156px] bg-[#46A3580F]">
           <button
-            className="absolute  hover:rotateX duration-500 right-[14px] top-[17px]"
+            className="absolute duration-500 right-[14px] top-[17px]"
             onClick={onClose}
           >
-            <IoMdClose className="text-[24px] text-[#46A358] hover:text-red-600 font-bold" />
+            <IoMdClose className="hover:text-red-600 font-bold text-[24px] text-[#46A358] " />
           </button>
           <img
             src={thanks}
@@ -51,7 +51,7 @@ const OrderModal = ({ isOpen, onClose }) => {
               </p>
               <p className="text-[#727272] font-bold text-[15px]">19586687</p>
             </div>
-            <hr className="w-[31px] h-[1.2px] rotate-90 bg-slate-200" />
+            <hr className="w-[31px] h-[1.2px] bg-slate-200" />
             <div>
               <p className="text-[#727272] font-normal text-[14px]">Date</p>
               <p className="text-[#727272] font-bold text-[15px]">
@@ -59,7 +59,7 @@ const OrderModal = ({ isOpen, onClose }) => {
               </p>
             </div>
           </div>
-          <hr className="w-[31px] h-[1.2px] gap-[22px] rotate-90 bg-slate-200" />
+          <hr className="w-[31px] h-[1.2px] gap-[22px] bg-slate-200" />
           <div className="w-[50%] h-full flex items-center justify-center gap-[11px]">
             <div className="w-[65px] ">
               <p className="text-[#727272] font-normal text-[14px]">Total</p>
@@ -67,7 +67,7 @@ const OrderModal = ({ isOpen, onClose }) => {
                 {calculateTotal()}
               </p>
             </div>
-            <hr className="w-[31px] h-[1.2px] rotate-90 bg-slate-200" />
+            <hr className="w-[31px] h-[1.2px] bg-slate-200" />
             <div className="w-[150px] ">
               <p className="text-[#727272]  font-normal text-[14px]">
                 Payment Method
@@ -93,7 +93,7 @@ const OrderModal = ({ isOpen, onClose }) => {
             </p>
           </div>
           <hr className="w-full h-[1px] border-none my-[11px] bg-slate-200" />
-          <div className=" max-h-[270px]  mb-[17px] overflow-y-scroll border hover:cursor-n-resize  hover:border-green-500  duration-100 box-content relative z-20">
+          <div className=" max-h-[270px]  mb-[17px] overflow-y-scroll border hover:cursor-pointer  duration-100 box-content relative z-20">
             {selectedProducts.map((item) => (
               <div
                 key={item.id}
@@ -150,7 +150,7 @@ const OrderModal = ({ isOpen, onClose }) => {
           <NavLink to="/">
             <button
               onClick={handleTrackOrder}
-              className="btn-style509  w-[162px] h-[45px] mb-[58px]  bg-[#46A358] text-white font-bold text-[16px] rounded-[5px]"
+              className="w-[162px] h-[45px] mb-[58px]  bg-[#46A358] text-white font-bold text-[16px] rounded-[5px]"
             >
               Track your order
             </button>
@@ -161,4 +161,4 @@ const OrderModal = ({ isOpen, onClose }) => {
   );
 };
 
-export default OrderModal;
+export default OrderMod;

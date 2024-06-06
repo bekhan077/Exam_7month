@@ -1,13 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
-import "../css/deleteButton.css";
 import { NavLink } from "react-router-dom";
-import paypal from "../../public/assets/paypal.png";
-import { Data } from "../db/data";
-import { ProductContext } from "../../src/App";
 import { useLocation } from "react-router-dom";
-import OrderModal from "../components/OrderModal";
+import paypal from "../../public/assets/paypal.png";
+import OrderMod from "../components/OrderMod";
+import { ProductContext } from "../App";
 
-const Checkout = () => {
+const Payment = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -448,7 +446,7 @@ const Checkout = () => {
               </div>
               <button
                 onClick={handlePlaceOrder}
-                className="btn-style509 mb-[210px] w-full bg-[#46A358] text-white text-[15px] font-bold h-[45px] rounded-[3px] border border-[#EAEAEA] flex items-center justify-center"
+                className=" mb-[210px] w-full bg-[#46A358] text-white text-[15px] font-bold h-[45px] rounded-[3px] border border-[#EAEAEA] flex items-center justify-center"
               >
                 Place Order
               </button>
@@ -456,9 +454,9 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-        <OrderModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      <OrderMod isOpen={isModalOpen} onClose={handleCloseModal} />
     </>
   );
 };
 
-export default Checkout;
+export default Payment;

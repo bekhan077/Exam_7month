@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Posts from "../components/Posts";
-import Duality from "../components/Duality";
+import Dual from "../components/Dual";
+import Post from "../components/Post";
+import HomeCards from "../components/HomeCards";
 import Carousel from "../components/Carousel";
-import Home_cards from "../components/Home_cards";
 import ThanksModal from "../components/ThanksModal";
 
-const Home = () => {
+const HomePage = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -20,8 +20,8 @@ const Home = () => {
       setShowThanksModal(true);
       setTimeout(() => {
         setShowThanksModal(false);
-        navigate("/", { state: {} }); //   // Location.state ni reset qilish
-      }, 5000); // 5 soniya
+        navigate("/", { state: {} });
+      }, 5000);
     }
   }, [location.state, navigate]);
 
@@ -30,12 +30,12 @@ const Home = () => {
       {showThanksModal && <ThanksModal />}
       <div className="w-full relative">
         <Carousel />
-        <Home_cards />
-        <Duality />
-        <Posts />
+        <HomeCards />
+        <Dual />
+        <Post />
       </div>
     </>
   );
 };
 
-export default Home;
+export default HomePage;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useContext } from "react";
-import { Data } from "../db/data";
+import { Data } from "../data/data";
 import Banner from "../../public/assets/sale_banner.png";
 import * as React from "react";
 import Box from "@mui/material/Box";
@@ -17,7 +17,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-const Home_cards = () => {
+const HomeCards = () => {
   const [liked, setLiked] = useState(false);
   const handleProductClick = (item) => {
     if (!product.includes(item.id)) {
@@ -37,7 +37,7 @@ const Home_cards = () => {
     );
   };
 
-  const [value, setValue] = React.useState([0, 60]);
+  const [value, setValue] = React.useState([20, 70]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -255,7 +255,7 @@ const Home_cards = () => {
               return (
                 <div
                   key={item.id}
-                  className="w-[250px] hover:scale-105 hover:[box-shadow:green_0px_2px_4px_0px,_rgba(14,_30,_37,_0.32)_0px_2px_16px_0px]  border-black cursor-pointer group relative duration-200"
+                  className="w-[250px] hover:[box-shadow:_0px_2px_4px_0px,_rgba(14,_30,_37,_0.32)_0px_2px_16px_0px]  border-black cursor-pointer group relative duration-200"
                 >
                   <NavLink to="/shop">
                     <img
@@ -271,15 +271,15 @@ const Home_cards = () => {
                   <div className="flex gap-[10px] absolute ml-[30%] justify-center z-[-1] group-hover:z-10 duration-200 group-hover:translate-y-[-52px]">
                     <div
                       onClick={() => handleProductClick(item)}
-                      className={`w-[35px] h-[35px] bg-white hover:scale-110 duration-[200ms] rounded-[4px] flex items-center justify-center ${
+                      className={`w-[35px] h-[35px] bg-white duration-[200ms] rounded-[4px] flex items-center justify-center ${
                         color ? "text-[#46A358]" : ""
                       }`}
                     >
-                      <FiShoppingCart className="text-[20px] hover:text-[#46A358] h-[35px]" />
+                      <FiShoppingCart className="text-[20px]  h-[35px]" />
                     </div>
 
                     <div
-                      className={`w-[35px] h-[35px] bg-white hover:scale-110 duration-[200ms] rounded-[4px] flex items-center justify-center ${
+                      className={`w-[35px] h-[35px] bg-white  duration-[200ms] rounded-[4px] flex items-center justify-center ${
                         item.liked ? "text-[#46A358]" : ""
                       }`}
                       onClick={() => {
@@ -289,12 +289,12 @@ const Home_cards = () => {
                       {item.liked ? (
                         <IoMdHeart className="text-[22px] h-[35px] " />
                       ) : (
-                        <IoMdHeartEmpty className="text-[22px] hover:text-red-600  h-[35px]" />
+                        <IoMdHeartEmpty className="text-[22px]   h-[35px]" />
                       )}
                     </div>
 
-                    <div className="w-[35px] h-[35px] bg-white hover:scale-110 duration-[200ms] rounded-[4px] flex items-center justify-center">
-                      <FiSearch className="text-[20px] hover:text-[#46A358] h-[35px]" />
+                    <div className="w-[35px] h-[35px] bg-white  duration-[200ms] rounded-[4px] flex items-center justify-center">
+                      <FiSearch className="text-[20px] h-[35px]" />
                     </div>
                   </div>
                   <div className="bg-white">
@@ -480,4 +480,4 @@ const Home_cards = () => {
   );
 };
 
-export default Home_cards;
+export default HomeCards;

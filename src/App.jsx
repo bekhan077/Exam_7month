@@ -1,13 +1,13 @@
 import React, { useState, createContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage";
 import Navbar from "./components/Navbar";
-import Blogs from "./pages/Blogs";
+import Blogs from "./pages/BlogsPage";
 import Basket from "./pages/Basket";
-import Shop from "./pages/Shop";
-import PlantCare from "./pages/PlantCare";
-import Checkout from "./pages/Checkout";
-import Login from "./pages/Login";
+import Shop from "./pages/Shopping";
+import PlantCare from "./pages/Plant";
+import Checkout from "./pages/Payment";
+import Login from "./pages/SignUp";
 import Footer from "./components/Footer";
 
 export const AboutContext = createContext();
@@ -24,7 +24,7 @@ const App = () => {
       <ProductContext.Provider value={{ product, setProduct }}>
         <AboutContext.Provider value={{ about, setAbout }}>
           <ShopContext.Provider value={{ shop, setShop }}>
-            <div className="w-[100%] ">
+            <div className="w-[100%]">
               <BrowserRouter>
                 <div className="w-[1200px] m-auto">
                   <Navbar />

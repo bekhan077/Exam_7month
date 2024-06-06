@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Data } from "../db/data";
+import { Data } from "../data/data";
 import { ShopContext } from "../../src/App";
 
 const CardSlider = () => {
@@ -18,11 +18,10 @@ const CardSlider = () => {
     setCount(index);
   };
 
- const handleCardClick = (itemId) => {
-   setShop([itemId]);
-   window.scroll(0, 0); // Bu yerda ekranni yuqoriga ko'taramiz
- };
-
+  const handleCardClick = (itemId) => {
+    setShop([itemId]);
+    window.scroll(0, 0);
+  };
 
   return (
     <div className="mt-28">

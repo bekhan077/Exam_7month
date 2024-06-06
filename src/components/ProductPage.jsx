@@ -47,12 +47,12 @@ const ProductPage = () => {
             Fusce ultricies massa massa. Fusce aliquam, <br /> purus eget
             sagittis vulputate, sapien libero hendrerit est, sed commodo augue
             nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Sed tempor, lorem et placerat <br /> vestibulum, metus nisi posuere
-            nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et
-            blandit et, luctus a nunc. Etiam gravida vehicula tellus, in
-            imperdiet ligula euismod <br /> eget. The ceramic cylinder planters
-            come with a wooden stand to help elevate your plants off the ground.{" "}
-            <br />
+            elit. Sed tempor, lorem et placerat <br /> vestibulum, metus nisi
+            posuere nisl, in accumsan elit odio quis mi. Cras neque metus,
+            consequat et blandit et, luctus a nunc. Etiam gravida vehicula
+            tellus, in imperdiet ligula euismod <br /> eget. The ceramic
+            cylinder planters come with a wooden stand to help elevate your
+            plants off the ground. <br />
             <br />
           </p>
           <p className="text-[#3D3D3D] font-bold text-[14px]">Living Room:</p>
@@ -68,9 +68,9 @@ const ProductPage = () => {
           <p className="text-[#727272] text-[14px] font-normal">
             The benefits of houseplants are endless. In addition to cleaning the
             air of harmful toxins, they can help to improve your mood, reduce
-            stress and provide you with better sleep. Fill every <br /> room of your
-            home with houseplants and their restorative qualities will improve
-            your life. <br />
+            stress and provide you with better sleep. Fill every <br /> room of
+            your home with houseplants and their restorative qualities will
+            improve your life. <br />
             <br />
           </p>
           <p className="text-[#3D3D3D] font-bold text-[14px]">Office:</p>
@@ -111,6 +111,22 @@ const ProductPage = () => {
             <br />
           </p>
           <p className="text-[#3D3D3D] font-bold text-[14px]">Office:</p>
+          <p className="text-[#727272] text-[14px] font-normal">
+            The ceramic cylinder planters come with a wooden stand to help
+            elevate your plants off the ground. The ceramic cylinder planters
+            come with a wooden stand to help elevate your <br /> plants off the
+            ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            <br />
+            <br />
+          </p>
+          <p className="text-[#727272] text-[14px] font-normal">
+            The ceramic cylinder planters come with a wooden stand to help
+            elevate your plants off the ground. The ceramic cylinder planters
+            come with a wooden stand to help elevate your <br /> plants off the
+            ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            <br />
+            <br />
+          </p>
           <p className="text-[#727272] text-[14px] font-normal">
             The ceramic cylinder planters come with a wooden stand to help
             elevate your plants off the ground. The ceramic cylinder planters

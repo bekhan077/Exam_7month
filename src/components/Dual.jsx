@@ -5,11 +5,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import mini from "../../public/assets/mini_c.svg";
 import max from "../../public/assets/max_c.svg";
 
-const Duality = () => {
+const Dual = () => {
   return (
     <>
       <div className="w-full flex items-center justify-between mb-[138px] mt-[146px]">
-        <div className="w-[586px] hover:[box-shadow:green_0px_5px_15px] border border-[#FBFBFB] relative h-[250px] pr-[35px] flex items-center justify-end transition-shadow duration-400">
+        <div className="w-[586px] border border-slate-200   relative h-[250px] pr-[35px] flex items-center justify-end transition-shadow duration-400">
           <img
             src={mini}
             alt="rasm"
@@ -25,7 +25,7 @@ const Duality = () => {
               We are an online plant shop offering a wide <br /> range of cheap
               and trendy plants
             </p>
-            <div className="btn-style510 w-[140px] mt-[30px] h-[40px] bg-[#46A358] hover:bg-[#3b894b] hover:cursor-pointer rounded-[6px] flex items-center justify-center">
+            <div className="w-[140px] mt-[30px] h-[40px] bg-[#46A358] hover:bg-[#3b894b] hover:cursor-pointer rounded-[6px] flex items-center justify-center">
               <p className="pl-[15px] mr-[5px] text-white font-medium text-[14px]">
                 Find More
               </p>
@@ -33,7 +33,7 @@ const Duality = () => {
             </div>
           </div>
         </div>
-        <div className="w-[586px] hover:[box-shadow:green_0px_5px_15px] border border-[#FBFBFB] relative h-[250px] pr-[35px] flex items-center justify-end transition-shadow duration-400">
+        <div className="w-[586px] border border-slate-200 relative h-[250px] pr-[35px] flex items-center justify-end transition-shadow duration-400">
           <img
             src={mini}
             alt="rasm"
@@ -50,7 +50,7 @@ const Duality = () => {
               We are an online plant shop offering a wide <br /> range of cheap
               and trendy plants
             </p>
-            <div className="btn-style510 w-[140px] mt-[30px] h-[40px] bg-[#46A358] hover:bg-[#3b894b] hover:cursor-pointer rounded-[6px] flex items-center justify-center">
+            <div className="w-[140px] mt-[30px] h-[40px] bg-[#46A358] hover:bg-[#3b894b] hover:cursor-pointer rounded-[6px] flex items-center justify-center">
               <p className="pl-[15px] mr-[5px] text-white font-medium text-[14px]">
                 Find More
               </p>
@@ -63,4 +63,4 @@ const Duality = () => {
   );
 };
 
-export default Duality;
+export default Dual;

@@ -1,5 +1,4 @@
-export const Data = [
-  {
+export const Data = [{
     id: 77116,
     common_name: "Barberton Daisy",
     slug: "quercus-rotundifolia",
@@ -12,8 +11,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 3519,
     price: 119,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/586c/8523/1ab58d21463d86aa3768f5c6c78f8a1f?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LSR6VkJRhBOHy3ZNImqqGEmihMXRobtS~heKJsYBa8QCOlblRsi-THOdC5A~jsV3ZkyKk0Xu6PXiFn4pg3xmu8axg-l1ujvb6cQKlo2XIVgCR6D4sTSA780xlVW1LlR3O1IUad7Dv11rxM8~d-HRRR~eSJU4CiXGSJWGpc9LXrrXZ3cTltOia9QlotmhtplTitvWjJb3BH1vVjzPn8DKUuBDWfY45kf-xHAvEkGjG6iHrR3XwDjX62fFhtn4IwC5-7QzNpnf8dwhVXC3VwMmjuY2-7Wq~sI5SIEdVAu~H1aqdKXlJitPlxcduljhU8Iyw6WkcXpsisVA53bx0MdcjA__",
+    image_url: "https://s3-alpha-sig.figma.com/img/586c/8523/1ab58d21463d86aa3768f5c6c78f8a1f?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LSR6VkJRhBOHy3ZNImqqGEmihMXRobtS~heKJsYBa8QCOlblRsi-THOdC5A~jsV3ZkyKk0Xu6PXiFn4pg3xmu8axg-l1ujvb6cQKlo2XIVgCR6D4sTSA780xlVW1LlR3O1IUad7Dv11rxM8~d-HRRR~eSJU4CiXGSJWGpc9LXrrXZ3cTltOia9QlotmhtplTitvWjJb3BH1vVjzPn8DKUuBDWfY45kf-xHAvEkGjG6iHrR3XwDjX62fFhtn4IwC5-7QzNpnf8dwhVXC3VwMmjuY2-7Wq~sI5SIEdVAu~H1aqdKXlJitPlxcduljhU8Iyw6WkcXpsisVA53bx0MdcjA__",
     synonyms: [
       "Quercus ilex var. oleoides",
       "Quercus ilex subvar. rotundifolia",
@@ -73,8 +71,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 5550,
     price: 169,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/4826/f3a4/1a2148d881d8376b26471cced915b1bb?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qHpfqmOMK5zqFeHLiZc8GVGoHPBU5LpjtuKSyLzFjm~aoIXILFttKYfkg~-lN9-09t4GBD-9jD~whwHdOOHtAEADxsk5u4Y8ZIbxwbxL7I8ovoLk-NX2uIVZLNv4~vaKWGzdObV06q2BplcpqyQTOhdCCE4-GiTxkKk~DfB3R2APfE4uXFIEwtxHhTxHL6R7~TcUaKH5HiOlG4l9nzlo1h2XIy7yiUIT0vkJFF4ed3lOru6d9BNe8riayNOW1GNTyEQsiAehgU68yU1cpcgCCTy-3YMbtLXIUWqytxAf4GnHSA2a6Easmjjd5hmszpmh4y1kBW2BZ6A~AqIp5BWP7g__",
+    image_url: "https://s3-alpha-sig.figma.com/img/4826/f3a4/1a2148d881d8376b26471cced915b1bb?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qHpfqmOMK5zqFeHLiZc8GVGoHPBU5LpjtuKSyLzFjm~aoIXILFttKYfkg~-lN9-09t4GBD-9jD~whwHdOOHtAEADxsk5u4Y8ZIbxwbxL7I8ovoLk-NX2uIVZLNv4~vaKWGzdObV06q2BplcpqyQTOhdCCE4-GiTxkKk~DfB3R2APfE4uXFIEwtxHhTxHL6R7~TcUaKH5HiOlG4l9nzlo1h2XIy7yiUIT0vkJFF4ed3lOru6d9BNe8riayNOW1GNTyEQsiAehgU68yU1cpcgCCTy-3YMbtLXIUWqytxAf4GnHSA2a6Easmjjd5hmszpmh4y1kBW2BZ6A~AqIp5BWP7g__",
     synonyms: [
       "Urtica dioica var. vulgaris",
       "Urtica dioica var. ramosa",
@@ -102,8 +99,7 @@ export const Data = [
     genus_id: 10915,
     price: 199,
 
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/7c59/7aa9/1ee5df5d1fd65d8184246c0c9918f920?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V-mllQqNeRv2QLXWj24VWBKq6zXa3uAHYkKGTs1aLE4Ncn4XdJCLcDeE0t2BlVbiRocRhCgkd7BUTAQWXGbfYDkHRD4H74yiGfYtlnk3BQHfm4A08JKqp19eAyUzEGJ2lhL4YPshcMX5eXW7PDk58g3UQzODsHqwEod3gATNKEgsl84gFNsGmEVwLVLpEnN1UhMzsQu5xYILCRxW3Q4MTIxQahyzbx8vj1z56bwvalFIK8hWuBZiz3VRjNFBCfO023xl10mtiqWv5kEIcYnmBS3r7fO44r6c-8Ok6zXTiXwTdGqpQUkCSUUrfZmWMSrKwcx1fqEF2M0~WPL3NLsrKQ__",
+    image_url: "https://s3-alpha-sig.figma.com/img/7c59/7aa9/1ee5df5d1fd65d8184246c0c9918f920?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V-mllQqNeRv2QLXWj24VWBKq6zXa3uAHYkKGTs1aLE4Ncn4XdJCLcDeE0t2BlVbiRocRhCgkd7BUTAQWXGbfYDkHRD4H74yiGfYtlnk3BQHfm4A08JKqp19eAyUzEGJ2lhL4YPshcMX5eXW7PDk58g3UQzODsHqwEod3gATNKEgsl84gFNsGmEVwLVLpEnN1UhMzsQu5xYILCRxW3Q4MTIxQahyzbx8vj1z56bwvalFIK8hWuBZiz3VRjNFBCfO023xl10mtiqWv5kEIcYnmBS3r7fO44r6c-8Ok6zXTiXwTdGqpQUkCSUUrfZmWMSrKwcx1fqEF2M0~WPL3NLsrKQ__",
     synonyms: [
       "Bromus glomeratus",
       "Koeleria dactylis",
@@ -133,8 +129,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 6597,
     price: 129,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/4575/e3df/52fa214db1f3ce519277860c13b11e21?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YBNDPk6oO3JV5m3fJ0J7~-euy-IT0C54q-eHPxXTsUgnGAe4gnaOji3bhVwnBnvGGdiYDyRk75d6vK6Si5daE2-VD6P0VdW~Aub0PF8Yy~CHROLkuvU-DzkHzMDIgHXhJdDDu3DDiWVCcMCeUtl4Cnc3L0MKI2oEEIW96KAjNSQ7EvMWo34nEhkShw~eqWOL~Wc2tRTw-3ucIOAgY~icAXszZdzqNHq2mT6d3cqSjxO~6tF81u44VC9imucc8F1jwBTvnlB~nt~IkSzatFmyEIsrl8Bj-ogfYwag6F4MQy0uqkg6rWb3tbR7UHuEFK-F8cBEUbnjmjS4OsWGX9ttQw__",
+    image_url: "https://s3-alpha-sig.figma.com/img/4575/e3df/52fa214db1f3ce519277860c13b11e21?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YBNDPk6oO3JV5m3fJ0J7~-euy-IT0C54q-eHPxXTsUgnGAe4gnaOji3bhVwnBnvGGdiYDyRk75d6vK6Si5daE2-VD6P0VdW~Aub0PF8Yy~CHROLkuvU-DzkHzMDIgHXhJdDDu3DDiWVCcMCeUtl4Cnc3L0MKI2oEEIW96KAjNSQ7EvMWo34nEhkShw~eqWOL~Wc2tRTw-3ucIOAgY~icAXszZdzqNHq2mT6d3cqSjxO~6tF81u44VC9imucc8F1jwBTvnlB~nt~IkSzatFmyEIsrl8Bj-ogfYwag6F4MQy0uqkg6rWb3tbR7UHuEFK-F8cBEUbnjmjS4OsWGX9ttQw__",
     synonyms: [
       "Plantago intermedia",
       "Plantago lanceolata var. communis",
@@ -249,8 +244,7 @@ export const Data = [
     family_common_name: "Aster family",
     genus_id: 250,
     price: 139,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/9531/c63d/3f618aefdf1ccb10a5aa0e2d00f45d0b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hjb~G8DkjSMccQTThd4fC-xfJYcbudJrhj~c8Z-AZs7NZ80nxclqU9gftbZEEeiP12BQbMOcWjD8ZtjIv-V0wzdXzLdXCoQcmvZ1ZYrzChRAVEhVJ3lL8yxlyCXR5-nGe3VS8XGdP84gMPVnwyPowX1GgC-3k6pehDH~WIc4h2OBivTxkSL9MWqctNH2eqqa0nCufF5gUqvLvtY0JnIXxpNUHUGNLDTClvJIRWfMzPuGBt9V1lywrqmLSpWEhS2-UGzSOHc1U1OTz-JPAVDxJtmjDFYcPg9B9-Fagzg04c7IuyL6qhRQBqzLmxsg4b1V4ctKyBs57koYTGyvpRuLjA__",
+    image_url: "https://s3-alpha-sig.figma.com/img/9531/c63d/3f618aefdf1ccb10a5aa0e2d00f45d0b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hjb~G8DkjSMccQTThd4fC-xfJYcbudJrhj~c8Z-AZs7NZ80nxclqU9gftbZEEeiP12BQbMOcWjD8ZtjIv-V0wzdXzLdXCoQcmvZ1ZYrzChRAVEhVJ3lL8yxlyCXR5-nGe3VS8XGdP84gMPVnwyPowX1GgC-3k6pehDH~WIc4h2OBivTxkSL9MWqctNH2eqqa0nCufF5gUqvLvtY0JnIXxpNUHUGNLDTClvJIRWfMzPuGBt9V1lywrqmLSpWEhS2-UGzSOHc1U1OTz-JPAVDxJtmjDFYcPg9B9-Fagzg04c7IuyL6qhRQBqzLmxsg4b1V4ctKyBs57koYTGyvpRuLjA__",
     synonyms: [
       "Santolina millefolium",
       "Achillea millefolium var. nobilior",
@@ -281,8 +275,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 1872,
     price: 179,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/744c/96db/a60207fabc5a7d29f8801ecf6b4e2aed?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GlYFeM-YeuQIb8RXo51n1cZ~YqyqjURmbSFHjlYDNQtfp0LeK-yJWdDAP5AbOy3K7BIuyghyQBbMG1GZZdQul3vX9zk8fhFc7S6ETNpnce7FC7CBLnObuvlHiqSJLkhwXWbDbiRbqEf1KSW0zFLY2RJM3bEGiuPZOBPvEqKQkPgFKUwiBOrnAN2Im02AQPp7vlLw88aEHZIectVHjLIwGjh2qz7v8XDzuy~5rAPcd669wnkfW4mk6K57Kax37GvzRv6JpVLynl-Q4WKhXZHwaqtttG-SmJEwqUEoLfcEFxvD7RFZ4gKjNK3ZQlUfSHxdPu29p3xNDZLRXemA~YAQtw__",
+    image_url: "https://s3-alpha-sig.figma.com/img/744c/96db/a60207fabc5a7d29f8801ecf6b4e2aed?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GlYFeM-YeuQIb8RXo51n1cZ~YqyqjURmbSFHjlYDNQtfp0LeK-yJWdDAP5AbOy3K7BIuyghyQBbMG1GZZdQul3vX9zk8fhFc7S6ETNpnce7FC7CBLnObuvlHiqSJLkhwXWbDbiRbqEf1KSW0zFLY2RJM3bEGiuPZOBPvEqKQkPgFKUwiBOrnAN2Im02AQPp7vlLw88aEHZIectVHjLIwGjh2qz7v8XDzuy~5rAPcd669wnkfW4mk6K57Kax37GvzRv6JpVLynl-Q4WKhXZHwaqtttG-SmJEwqUEoLfcEFxvD7RFZ4gKjNK3ZQlUfSHxdPu29p3xNDZLRXemA~YAQtw__",
     synonyms: ["Trifolium repens var. maculatum", "Amoria repens"],
     genus: "Trifolium",
     family: "Fabaceae",
@@ -305,8 +298,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 11051,
     price: 99,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/9957/e153/a59c050946e77e8fc7e11525e87c4678?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OeoxEgrRHNmFC124q2GXAXNFmcQs91-XNlbtcE9OfqY3T9DXvemYM9HAz8xRI3zxIgmRTOZ2IQu9NRdRmqBn3KN9hS6tENN3lYHep0yto5Nt6LHE6R1CdSqZYg8z0YZ-XWcwkdI5whz9eoDhptCEzUCwksoWC3ezF6m0zTM4jZG46qzHGbQ2cugiA1ALXKojTwvte7RGxdVJx2i8nFsnVRH1wizR3cL7a8h0V6NWMJn-zN0ZjkYhWB6hQYLg9qufBvkOPfzVmBHBY4AUGlJvGEfHMCMt0ebsgKx4VxLQtVG62GO-BC54SveZPUcyhGybIuuIpMgC2GZVoC2uBVjWZA__",
+    image_url: "https://s3-alpha-sig.figma.com/img/9957/e153/a59c050946e77e8fc7e11525e87c4678?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OeoxEgrRHNmFC124q2GXAXNFmcQs91-XNlbtcE9OfqY3T9DXvemYM9HAz8xRI3zxIgmRTOZ2IQu9NRdRmqBn3KN9hS6tENN3lYHep0yto5Nt6LHE6R1CdSqZYg8z0YZ-XWcwkdI5whz9eoDhptCEzUCwksoWC3ezF6m0zTM4jZG46qzHGbQ2cugiA1ALXKojTwvte7RGxdVJx2i8nFsnVRH1wizR3cL7a8h0V6NWMJn-zN0ZjkYhWB6hQYLg9qufBvkOPfzVmBHBY4AUGlJvGEfHMCMt0ebsgKx4VxLQtVG62GO-BC54SveZPUcyhGybIuuIpMgC2GZVoC2uBVjWZA__",
     synonyms: [
       "Holcus lanatus var. scaber",
       "Holcus lanatus subsp. argenteus",
@@ -367,8 +359,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 6311,
     price: 59,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/78e9/e6c1/90effae17498640571679183299f774e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cvQIAyAp1rlAXTjQWDNr9jUhyxcNPfE1S97FmD4osiZnChL8PWikdcDReEwJlG~o0CgU32Z1h9vNLp3ho6Eqa8h4Feihi-hUAGxzYzsSPEAdDd6YQzGjdmTnhSh8mgNDwVGvE84wcgdJxop6v8Mej~A~y5hagNYn-1e28h0MqxYPWSLz-9z1OLnVC2VX~aNqdLKy-R4VAqWMyxNJHiOQkE9MBNxmLiseqe~UF2NfuBjT26pzSsrg4I2R~6gsjMTLoPUHE9VB-mP7lD4mhSGjQHb85SwU0C181T3ZEwdFuA9kvzLDU7hQifRexbFR89bb6OE-llsTCFAVM3ypgviUtQ__",
+    image_url: "https://s3-alpha-sig.figma.com/img/78e9/e6c1/90effae17498640571679183299f774e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cvQIAyAp1rlAXTjQWDNr9jUhyxcNPfE1S97FmD4osiZnChL8PWikdcDReEwJlG~o0CgU32Z1h9vNLp3ho6Eqa8h4Feihi-hUAGxzYzsSPEAdDd6YQzGjdmTnhSh8mgNDwVGvE84wcgdJxop6v8Mej~A~y5hagNYn-1e28h0MqxYPWSLz-9z1OLnVC2VX~aNqdLKy-R4VAqWMyxNJHiOQkE9MBNxmLiseqe~UF2NfuBjT26pzSsrg4I2R~6gsjMTLoPUHE9VB-mP7lD4mhSGjQHb85SwU0C181T3ZEwdFuA9kvzLDU7hQifRexbFR89bb6OE-llsTCFAVM3ypgviUtQ__",
     synonyms: [
       "Ranunculus tomentosus",
       "Ranunculus repens var. prostratus",
@@ -434,8 +425,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 3519,
     price: 39,
-    image_url:
-      "https://s3-alpha-sig.figma.com/img/5219/e659/b8a1d488abd136ce27f86ab3da3ceb37?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bzJRznp6NdBB3sxT-6LH3HpeLU8abIhAcIIZIcndSMyVaePHQ9A7F6Q0p8yJe2ExumnQ2M3eBGtHgyQR~uVZmcSK0Zf03M8RIyI4mFixBw2Sv8EipLth2D6wK9-F5Xmj7hCYNujpJaeD~wA30AIaJqwmmsofdvaRKMXHW8u~AYdsK4moQHSDsRqJxzoyTKragA0TmUcCc-3UPSB4dxUNnqBOVWOzewH-P0XgZRqj-7xsChoXXg~lFfdlBEMFuUxddQuqcdR-OsiTFiinnNKTjQtgixzBdm90Smdq-3fTpxAIyyaLINFiHao6yOzp6sdma0aq8aZCndZfxamyczaevg__",
+    image_url: "https://s3-alpha-sig.figma.com/img/5219/e659/b8a1d488abd136ce27f86ab3da3ceb37?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bzJRznp6NdBB3sxT-6LH3HpeLU8abIhAcIIZIcndSMyVaePHQ9A7F6Q0p8yJe2ExumnQ2M3eBGtHgyQR~uVZmcSK0Zf03M8RIyI4mFixBw2Sv8EipLth2D6wK9-F5Xmj7hCYNujpJaeD~wA30AIaJqwmmsofdvaRKMXHW8u~AYdsK4moQHSDsRqJxzoyTKragA0TmUcCc-3UPSB4dxUNnqBOVWOzewH-P0XgZRqj-7xsChoXXg~lFfdlBEMFuUxddQuqcdR-OsiTFiinnNKTjQtgixzBdm90Smdq-3fTpxAIyyaLINFiHao6yOzp6sdma0aq8aZCndZfxamyczaevg__",
     synonyms: [
       "Quercus robur var. vulgaris",
       "Quercus robur subsp. eurobur",
@@ -464,8 +454,7 @@ export const Data = [
     family_common_name: null,
     genus_id: 10999,
     price: 120,
-    image_url:
-      "https://images.uzum.uz/ckbe40kjvf2kdov69970/t_product_240_high.jpg",
+    image_url: "https://images.uzum.uz/ckbe40kjvf2kdov69970/t_product_240_high.jpg",
     synonyms: [
       "Festuca rubra var. hirta",
       "Festuca rubra subsp. glaucodea",
@@ -694,8 +683,7 @@ export const Data = [
     family_common_name: "Olive family",
     genus_id: 10598,
     price: 145,
-    image_url:
-      "https://images.uzum.uz/ckbe3rkvutv73otr9ncg/t_product_240_high.jpg",
+    image_url: "https://images.uzum.uz/ckbe3rkvutv73otr9ncg/t_product_240_high.jpg",
     synonyms: ["Fraxinus excelsior var. communis"],
     genus: "Fraxinus",
     family: "Oleaceae",

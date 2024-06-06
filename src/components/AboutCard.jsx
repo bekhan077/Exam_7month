@@ -9,16 +9,12 @@ import { Link } from "react-router-dom";
 
 const AboutCard = () => {
   const { about } = useContext(AboutContext);
-  const NotFound = "";
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("S");
 
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const handleDecrement = () => {
     if (quantity > 1) {
@@ -30,6 +26,10 @@ const AboutCard = () => {
     setSelectedSize(size);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="mt-28 border border-black mb-11">
       {about && about.length > 0 ? (
@@ -38,16 +38,14 @@ const AboutCard = () => {
             return (
               <div key={item.id} className="flex items-center gap-10">
                 <div className="w-[25%]">
-                  {Array(4)
-                    .fill()
-                    .map((_, index) => (
-                      <img
-                        key={index}
-                        src={item.image_url}
-                        alt={`img-${index}`}
-                        className="w-28 h-28 mb-3"
-                      />
-                    ))}
+                  {item.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`img-${index}`}
+                      className="w-28 h-28 mb-3"
+                    />
+                  ))}
                 </div>
                 <div className="w-[100%]">
                   <img
@@ -73,9 +71,7 @@ const AboutCard = () => {
                     <h1 className="text-lg font-medium">Short Description:</h1>
                     <p className="opacity-75">
                       The ceramic cylinder planters come with a wooden stand to
-                      help elevate your plants off the ground. The ceramic
-                      cylinder planters come with a wooden stand to help elevate
-                      your plants off the ground.{" "}
+                      help elevate your plants off the ground.
                     </p>
                     <h1 className="text-lg font-medium">Size:</h1>
                     <div className="flex gap-3 my-4">
@@ -85,8 +81,8 @@ const AboutCard = () => {
                           onClick={() => handleSizeChange(size)}
                           className={`py-2 px-4 rounded-full cursor-pointer ${
                             selectedSize === size
-                              ? "bg-green-300  text-white-700 border-green-500"
-                              : "bg-green-00 text-green-500 border-green-700"
+                              ? "bg-green-300  text-white border-green-500"
+                              : "text-green-500 border-green-700"
                           }`}
                         >
                           {size}
@@ -109,14 +105,14 @@ const AboutCard = () => {
                         +
                       </button>
                       <Link to="/shop/card">
-                        <button className="px-5 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                        <button className="text-white rounded-lg hover:bg-green-600 px-5 py-2 bg-green-500">
                           Buy now
                         </button>
                       </Link>
-                      <button className="px-5 py-2 border-green-500 rounded-lg border">
+                      <button className="rounded-lg border px-5 py-2 border-green-500">
                         Add to cart{" "}
                       </button>
-                      <p className="p-3 rounded-full border border-green-600 hover:bg-green-500 hover:text-white-700">
+                      <p className="hover:bg-green-500 hover:text-white p-3 rounded-full border border-green-600">
                         <CiHeart className="text-green-600 hover:text-white" />
                       </p>
                     </div>
@@ -131,16 +127,16 @@ const AboutCard = () => {
                       <span className=" opacity-60">Tags</span>: Home, Garden,
                       Plants
                     </p>
-                    <div className="flex gap-4 items-center">
-                      <p className="font-medium opacity-55">
-                        Share this products:
+                    <div className="flex items-center gap-4">
+                      <p className="opacity-55 font-medium">
+                        Share this product:
                       </p>
                     </div>
                     <div className="flex mt-[20px] gap-2">
-                      <FaFacebookF className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
-                      <FaTwitter className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
-                      <FaLinkedinIn className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
-                      <LuMessageSquare className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
+                      <FaFacebookF className="hover:text-blue-700 w-6 cursor-pointer hover:scale-110" />
+                      <FaTwitter className="hover:text-blue-700 w-6 cursor-pointer hover:scale-110" />
+                      <FaLinkedinIn className="hover:text-blue-700 w-6 cursor-pointer hover:scale-110" />
+                      <LuMessageSquare className="hover:text-blue-700 w-6 cursor-pointer hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -151,8 +147,7 @@ const AboutCard = () => {
         })
       ) : (
         <div className="flex flex-col items-center justify-center">
-          {/* <img src={NotFound} alt="" className="w-96 h-60" /> */}
-          <p className="text-gray-500">No found image </p>
+          <p className="text-gray-500">No image found</p>
         </div>
       )}
     </div>

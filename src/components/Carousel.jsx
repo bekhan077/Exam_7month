@@ -63,7 +63,7 @@ const Carousel = () => {
                   <br />
                   Order your favorite plants!
                 </p>
-                <button className="px-7 py-2 bg-[#46A358] rounded-lg font-medium mt-4 text-white">
+                <button className="px-7 py-2 font-medium mt-4 text-white bg-[#46A358] rounded-lg ">
                   SHOP NOW
                 </button>
               </div>
